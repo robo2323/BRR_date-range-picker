@@ -7,10 +7,9 @@ body {
 .hide {
   display: none;
 }
-/*.datepicker {
-    width: 0;
-    display: none;
-}*/
+#datepicker {
+  width: 0;
+}
 .dp-highlight .ui-state-default {
   background: #484;
   color: #FFF;
