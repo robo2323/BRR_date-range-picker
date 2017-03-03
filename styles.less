@@ -1,3 +1,5 @@
+@mq-phone: ~"only screen and (max-width: 900px)";
+
 html,
 body {
     height: 100%;
@@ -20,4 +22,19 @@ body {
 .ui-datepicker-today {
     background: #37aa00;
     color: #fff;
+}
+
+.ui-datepicker-multi{
+    @media @mq-phone{
+        float: none;
+    }
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
 }
