@@ -7,9 +7,6 @@ body {
 .hide {
   display: none;
 }
-#datepicker {
-  width: 0;
-}
 .dp-highlight .ui-state-default {
   background: #4bc800;
   color: #FFF;
@@ -18,16 +15,23 @@ body {
   background: #37aa00;
   color: #fff;
 }
-@media only screen and (max-width: 900px) {
-  .ui-datepicker-multi {
-    float: none;
+.ui-datepicker {
+  position: absolute;
+  width: 500px !important;
+  height: auto;
+}
+@media only screen and (max-width: 550px) {
+  .ui-datepicker {
+    width: 450px !important;
+    font-size: 12px;
   }
 }
-.ui-datepicker .ui-datepicker-buttonpane button {
-  float: right;
-  margin: .5em .2em .4em;
-  cursor: pointer;
-  padding: .2em .6em .3em .6em;
-  width: auto;
-  overflow: visible;
+@media only screen and (max-width: 550px) {
+  .ui-datepicker-multi-2 .ui-datepicker-group {
+    width: 39%;
+  }
+}
+.date-select {
+  float: left;
+  margin-right: 10%;
 }
