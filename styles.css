@@ -7,14 +7,23 @@ body {
 .hide {
   display: none;
 }
+/*
+date range highlight color
+*/
 .dp-highlight .ui-state-default {
   background: #4bc800;
   color: #FFF;
 }
+/*
+todays date color
+*/
 .ui-datepicker-today {
   background: #37aa00;
   color: #fff;
 }
+/*
+DatePicker Container
+*/
 .ui-datepicker {
   position: absolute;
   width: 500px !important;
@@ -26,6 +35,9 @@ body {
     font-size: 12px;
   }
 }
+/*
+width of each calendar
+*/
 @media only screen and (max-width: 550px) {
   .ui-datepicker-multi-2 .ui-datepicker-group {
     width: 39%;
