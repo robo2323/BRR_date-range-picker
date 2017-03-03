@@ -11,6 +11,10 @@ body {
   width: 0;
 }
 .dp-highlight .ui-state-default {
-  background: #484;
+  background: #4bc800;
   color: #FFF;
+}
+.ui-datepicker-today {
+  background: #37aa00;
+  color: #fff;
 }
