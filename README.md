@@ -1,6 +1,6 @@
 # BRR_date-range-picker
 
-Using JqueryUI with a custom rolled theme from: [jQueryUI them roller](http://jqueryui.com/themeroller/) See the zip file in jQueryUI directory for all files including ### Minified CSS file (jquery-ui.min.css)
+Using JqueryUI with a custom rolled theme from: [jQueryUI them roller](http://jqueryui.com/themeroller/) See the zip file in jQueryUI directory for all files including ***Minified CSS file (jquery-ui.min.css)***
 
 jQueryUI library can be customised to include only the required components/widgets here: [jQueryUI Download](http://jqueryui.com/download/)
 
