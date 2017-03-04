@@ -14,8 +14,7 @@ body {
 }
 /*todays date color*/
 .ui-datepicker-today {
-  background-color: #37aa00 !important;
-  color: #fff;
+  border: 1px solid #111 !important;
 }
 /*DatePicker Container*/
 .ui-datepicker {
