@@ -56,22 +56,28 @@ $('#date').click(function () {
 
 });
 
-//closes date picker when clicking outside it
-$(document).click(function (event) {
+$(document).click(function(e) {
+       if (!($(e.target).is('#date, #datepicker, #datepicker *'))) {
+       $('#datepicker').datepicker("destroy");
+       }
+   });
 
-    //console.log(event.target.tagName);
-
-    //close if body clicked
-    if (event.target.tagName == "BODY") {
-        $('#datepicker').datepicker("destroy");
-
-    }
-
-    event.target.classList.forEach(function (element) {
-        //close if element clicked is not ui element of datepicker ***made need tweaking***
-        if (!/ui-datepicker*/g.test(element) && !/ui-icon*/g.test(element) && element !== "date-input" && element !== "ui-icon" && event.target.tagName !== "BUTTON") {
-            console.log(element);
-            $('#datepicker').datepicker("destroy");
-        }
-    });
-});
+////closes date picker when clicking outside it
+//$(document).click(function (event) {
+//
+//    //console.log(event.target.tagName);
+//
+//    //close if body clicked
+//    if (event.target.tagName == "BODY") {
+//        $('#datepicker').datepicker("destroy");
+//
+//    }
+//
+//    event.target.classList.forEach(function (element) {
+//        //close if element clicked is not ui element of datepicker ***made need tweaking***
+//        if (!/ui-datepicker*/g.test(element) && !/ui-icon*/g.test(element) && element !== "date-input" && element !== "ui-icon" && event.target.tagName !== "BUTTON") {
+//            console.log(element);
+//            $('#datepicker').datepicker("destroy");
+//        }
+//    });
+//});
