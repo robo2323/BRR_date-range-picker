@@ -295,6 +295,18 @@ a.ui-button:active,
 	background-image: url("images/ui-icons_666666_256x240.png");
 }
 
+/*unselectable/futur dates*/
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
 
 /*custom datepicker styling*/
 @mq-small: ~"only screen and (max-width: 550px)";
